@@ -207,6 +207,9 @@ header .header-content .header-content-inner p {
   margin: 50px auto 0;
 }
 @media (min-width: 992px) {
+  .navbar-default .navbar-header .navbar-brand {
+    margin-top: 10px;
+  }
   .service-box {
     margin: 20px auto 0;
   }
