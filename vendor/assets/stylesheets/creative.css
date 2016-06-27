@@ -416,3 +416,8 @@ body {
 .navbar-default .navbar-collapse {
  padding : 10px;
 }
+
+.text-bold {
+  font-weight: bold;
+}
+
