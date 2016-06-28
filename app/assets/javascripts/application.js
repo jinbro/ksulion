@@ -15,7 +15,6 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
-//= require bootstrap.min
 //= require creative
 //= require creative.min
 //= require jquery.easing.min
