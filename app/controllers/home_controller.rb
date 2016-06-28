@@ -24,12 +24,9 @@ class HomeController < ApplicationController
     # Send your message through the client
     mg_client.send_message 'sandboxc482aa0a32f84ff883338be50217cedf.mailgun.org', message_params
     
-    result = mg_client.send_message('example.com', message_params).to_h!
-
-    message_id = result['id']
+    # Result msg 
+    result = mg_client.send_message('sandboxc482aa0a32f84ff883338be50217cedf.mailgun.org', message_params).to_h!
     message = result['message']
-    
-    console.log(message)
     
     redirect_to '/' 
   end
