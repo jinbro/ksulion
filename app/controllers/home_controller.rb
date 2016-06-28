@@ -5,7 +5,7 @@ class HomeController < ApplicationController
     
   end
   
-  def mailing
+  def mail
     user_name = params[:user_name]
     user_email = params[:user_email]
     email_title = params[:title]
@@ -25,4 +25,5 @@ class HomeController < ApplicationController
     mg_client.send_message 'sandboxc482aa0a32f84ff883338be50217cedf.mailgun.org', message_params
     redirect_to '/' 
   end
+  
 end
