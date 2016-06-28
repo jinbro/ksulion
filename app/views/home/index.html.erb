@@ -191,7 +191,7 @@
 			
 			<div class="col-lg-4 col-lg-offset-4 text-center">
 				<i class="fa fa-envelope-o fa-3x sr-contact"></i>
-				<p style="margin-top: 10px;"><a data-toggle="modal" data-target="#myModal">admin@ksulion.net</a></p> <!-- crate modal -->
+				<p style="margin-top: 10px; cursor:pointer; text-decoration: none;"><a data-toggle="modal" data-target="#myModal">master@ksulion.net</a></p> <!-- crate modal -->
 			</div>
 		</div>
 	</div>
@@ -207,14 +207,36 @@
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<h4 class="modal-title">문의하기</h4>
 			</div>
+			<form>
+			
 			<div class="modal-body">
 				<p>
-					Some text in the modal.
+						<div class="form-group">
+							<label for="InputTitle">이름</label>
+							<input name="title" type="text" class="form-control" id="InputTitle" required>
+						</div>
+						<div class="form-group">
+							<label for="InputEmail">이메일(답변받을주소)</label>
+							<input name="user_email" type="email" class="form-control" id="InputEmail" required>
+						</div>
+						<div class="form-group">
+							<label for="InputTitle">제목</label>
+							<input name="user_email" type="email" class="form-control" id="InputTitle" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="InputContent">문의내용</label><br>
+							<textarea name="content" id="InputContent" required></textarea>
+						</div>
+						
 				</p>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+				<button type="submit" class="btn btn-default">보내기</button>
 			</div>
+			
+			</form>
 		</div>
 	</div>
 </div>
