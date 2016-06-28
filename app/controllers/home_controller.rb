@@ -1,4 +1,4 @@
-require 'mail'
+require 'mailgun'
 
 class HomeController < ApplicationController
   def index
