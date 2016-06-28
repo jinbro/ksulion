@@ -17,7 +17,7 @@ class HomeController < ApplicationController
     # Define your message parameters
     message_params =  { from: user_email,
                         to:   'pk0267@naver.com',
-                        subject: email_title ,
+                        subject: "[" + user_name + "], [" + user_email + "]" + email_title ,
                         text:    email_content
                       }
         
